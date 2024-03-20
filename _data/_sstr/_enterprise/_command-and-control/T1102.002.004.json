@@ -1,0 +1,32 @@
+{
+            "sstr_id": "T1102.002.004",
+			"sstr_technique": "Using Google Sheet as C2",
+			
+            
+            "tactics_id": "TA0011",
+            "tactics": "Command and Control",
+			
+            "techniques_id": "T1102",
+            "technique": "Web Service",
+			
+			"sub_technique_id": "T1102.002",
+            "sub_technique": "Web Service: Bidirectional Communication",
+           
+			"sstr_platform": ["Windows", "macOS", "Linux"],
+			
+			"privilege_required": "User",
+			
+			"sstr_description": "Adversaries may use Google Sheet for Command and Control (C2) operations.",
+			
+			"sstr_detection": "",
+			
+            "reference_links": [
+                "https://www.linkedin.com/pulse/hacking-tutorial-google-sheets-command-control-c2-server-maxwell-zhou",
+                "https://github.com/looCiprian/GC2-sheet"
+            
+            ],
+            "contributor": "Ye Yint Min Thu Htut",
+			"entry_date": "2024-02-01",
+            "modified_date": "2024-02-01",
+            "version": "v1.0"
+}

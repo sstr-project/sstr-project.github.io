@@ -1,0 +1,32 @@
+{
+            "sstr_id": "T1102.002.007",
+			"sstr_technique": "Using Google Docs as C2",
+			
+            
+            "tactics_id": "TA0011",
+            "tactics": "Command and Control",
+			
+            "techniques_id": "T1102",
+            "technique": "Web Service",
+			
+			"sub_technique_id": "T1102.002",
+            "sub_technique": "Web Service: Bidirectional Communication",
+           
+			"sstr_platform": ["Windows", "macOS", "Linux"],
+			
+			"privilege_required": "User",
+			
+			"sstr_description": "Adversaries may use Google Docs for Command and Control (C2) operations.",
+			
+			"sstr_detection": "",
+			
+            "reference_links": [
+                "https://www.arbornetworks.com/blog/asert/donot-team-leverages-new-modular-malware-framework-south-asia/"
+                
+            
+            ],
+            "contributor": "Ye Yint Min Thu Htut",
+			"entry_date": "2024-02-01",
+            "modified_date": "2024-02-01",
+            "version": "v1.0"
+}

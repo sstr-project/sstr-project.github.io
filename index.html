@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSTR - Sub Sub Techniques Repository</title>
+    <link rel="stylesheet" href="_css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+		<div class="header-container">
+    <img src="_assets/_images/logo.png" alt="Logo" class="logo">
+    <h1>SSTR - Sub Sub Techniques Repository</h1> 
+		</div>
+</div>
+		
+        <div class="abstract">
+      
+		<p>The <b>Sub Sub Technique Repository (SSTR)</b> is an open platform dedicated to the nuanced exploration of cyber threats, 
+		specifically honing in on the detailed categorization of variants within MITRE ATT&CK® sub-techniques. 
+		It aims to keep pace with the dynamic evolution of adversary methods by uncovering and documenting new variant techniques, thereby maintaining a step ahead of the adaptive strategies of APT groups. 
+		<br> <br> Designed as <b>a community-driven resource</b>, SSTR invites contributions from cybersecurity professionals worldwide, fostering a collaborative environment 
+		for sharing and enhancing collective knowledge on the intricacies of cyber threats. If you're interested, take a look at our <a href="https://github.com/CyberActiveDefense/sstr/How-to-Contribute.md"> contribution guide </a> on how to contribute.
+</p>
+		        </div>
+		<img src="_assets/_images/sstr-techniques.png" alt="sstr-techniques-flow" class="sstr-techniques-flow">
+		
+    <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search techniques..." oninput="filterTechniques()">
+	   </div>
+	
+		
+        <table id="techniques-table">
+            <thead>
+                <tr>
+                    <th>SSTR ID</th>
+					<th>SSTR Technique</th>				
+                    <th>Tactics</th>
+                    <th>Technique</th>
+                    <th>Sub Technique</th>
+					<th>Platform</th>
+					<th>Entry Date</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="techniques-body">
+              
+            </tbody>
+        </table>
+    </div>
+   <footer>
+        <p></p>
+    </footer>
+    <script src="_js/main.js"></script>
+</body>
+</html>

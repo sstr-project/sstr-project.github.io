@@ -1,0 +1,33 @@
+{
+            "sstr_id": "T1102.002.005",
+			"sstr_technique": "Using OneDrive as C2",
+			
+            
+            "tactics_id": "TA0011",
+            "tactics": "Command and Control",
+			
+            "techniques_id": "T1102",
+            "technique": "Web Service",
+			
+			"sub_technique_id": "T1102.002",
+            "sub_technique": "Web Service: Bidirectional Communication",
+           
+			"sstr_platform": ["Windows", "macOS", "Linux"],
+			
+			"privilege_required": "User",
+			
+			"sstr_description": "Adversaries may use OneDrive for Command and Control (C2) operations.",
+			
+			"sstr_detection": "",
+			
+            "reference_links": [
+                "https://www.microsoft.com/en-us/security/blog/2022/06/02/exposing-polonium-activity-and-infrastructure-targeting-israeli-organizations/",
+                "https://www.darkreading.com/cyberattacks-data-breaches/threat-actors-use-microsoft-onedrive-for-command-and-control-in-attack-campaign",
+                "https://bc-security.gitbook.io/empire-wiki/listeners/onedrive"
+            
+            ],
+            "contributor": "Ye Yint Min Thu Htut",
+			"entry_date": "2024-02-01",
+            "modified_date": "2024-02-01",
+            "version": "v1.0"
+}

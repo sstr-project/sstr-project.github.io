@@ -1,0 +1,33 @@
+{
+            "sstr_id": "T1102.002.001",
+			"sstr_technique": "Using Wordpress Sites as C2",
+			
+            
+            "tactics_id": "TA0011",
+            "tactics": "Command and Control",
+			
+            "techniques_id": "T1102",
+            "technique": "Web Service",
+			
+			"sub_technique_id": "T1102.002",
+            "sub_technique": "Web Service: Bidirectional Communication",
+           
+			"sstr_platform": ["Windows", "macOS", "Linux"],
+			
+			"privilege_required": "User",
+			
+			"sstr_description": "Adversaries may use WordPress platforms for Command and Control (C2) operations through several methods, including leveraging blog posts and comment sections.",
+			
+			"sstr_detection": "",
+			
+            "reference_links": [
+                "http://www.crowdstrike.com/blog/whois-numbered-panda/",
+                "https://github.com/accidentalrebel/wp-c2"
+            
+            ],
+            "contributor": "Ye Yint Min Thu Htut",
+			"entry_date": "2024-01-01",
+            "modified_date": "2024-01-01",
+            "version": "v1.0"
+
+}

@@ -1,0 +1,31 @@
+{
+            "sstr_id": "T1102.002.002",
+			"sstr_technique": "Using Google Drive as C2",
+			
+            
+            "tactics_id": "TA0011",
+            "tactics": "Command and Control",
+			
+            "techniques_id": "T1102",
+            "technique": "Web Service",
+			
+			"sub_technique_id": "T1102.002",
+            "sub_technique": "Web Service: Bidirectional Communication",
+           
+			"sstr_platform": [ "Windows", "macOS", "Linux" ],
+			
+			"privilege_required": "User",
+			
+			"sstr_description": "Adversaries may use Google Drive for Command and Control (C2) operations.",
+			
+			"sstr_detection": "",
+			
+            "reference_links": [
+                "https://threatpost.com/roguerobin-google-drive-c2/141079/"
+            
+            ],
+            "contributor": "Ye Yint Min Thu Htut",
+			"entry_date": "2024-01-01",
+            "modified_date": "2024-01-01",
+            "version": "v1.0"
+}
