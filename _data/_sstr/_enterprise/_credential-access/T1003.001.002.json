@@ -1,8 +1,8 @@
 {
-            "sstr_id": "T1003.001.001",
-			"sstr_technique": "Using Procdump to dump LSASS Memory",
+            "sstr_id": "T1003.001.002",
+			"sstr_technique": "Using comsvcs.dll to dump LSASS Memory",
 			
-            "tactics_id": "TA0016",
+            "tactics_id": "TA0006",
             "tactics": "Credential Access",
 			
             "techniques_id": "T1003",
@@ -13,7 +13,10 @@
            
 			"sstr_platform": ["Windows"],
 			
-			"privilege_required": "System",
+			"privilege_required": [
+					"Administrator", 
+					"System"
+			],
 			
 			"sstr_description": "Procdump from sysinternal's could also be used to dump lsass.exe's memory to disk for analysis with tools like Mimikatz.",
 			
