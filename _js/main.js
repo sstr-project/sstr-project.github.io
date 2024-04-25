@@ -5,29 +5,22 @@ function filterTechniques() {
     const searchQuery = document.getElementById('search-input').value.toLowerCase();
 
     const filteredData = techniquesData.filter(item => {
-        const sstrId = item.sstr_id?.toLowerCase() || "";
-        const sstrTechnique = item.sstr_technique?.toLowerCase() || "";
-        const tactics = item.tactics?.toLowerCase() || "";
-        const techniques = item.techniques?.toLowerCase() || "";
-        const subTechnique = item.sub_technique?.toLowerCase() || "";
-        const sstrPlatform = item.sstr_platform?.toString().toLowerCase() || ""; 
-        const privilegeRequired = item.privilege_required?.toLowerCase() || "";
-        const sstrDescription = item.sstr_description?.toLowerCase() || "";
-        const sstrDetection = item.sstr_detection?.toLowerCase() || "";
-        const contributor = item.contributor?.toLowerCase() || "";
-        const entryDate = item.entry_date || ""; 
+        const platformMatch = item.sstr_platform?.some(platform => 
+            platform.toLowerCase().includes(searchQuery)
+        );
 
-        return sstrId.includes(searchQuery) ||
-               sstrTechnique.includes(searchQuery) ||
-               tactics.includes(searchQuery) ||
-               techniques.includes(searchQuery) ||
-               subTechnique.includes(searchQuery) ||
-               sstrPlatform.includes(searchQuery) ||
-               privilegeRequired.includes(searchQuery) ||
-               sstrDescription.includes(searchQuery) ||
-               sstrDetection.includes(searchQuery) ||
-               contributor.includes(searchQuery) ||
-               entryDate.includes(searchQuery);
+        return (
+            item.sstr_id?.toLowerCase().includes(searchQuery) ||
+            item.sstr_technique?.toLowerCase().includes(searchQuery) ||
+            item.tactics?.toLowerCase().includes(searchQuery) ||
+            item.techniques?.toLowerCase().includes(searchQuery) ||
+            item.sub_technique?.toLowerCase().includes(searchQuery) ||
+            platformMatch || 
+            item.sstr_description?.toLowerCase().includes(searchQuery) ||
+            item.sstr_detection?.toLowerCase().includes(searchQuery) ||
+            item.contributor?.toLowerCase().includes(searchQuery) ||
+            item.entry_date?.includes(searchQuery)
+        );
     });
 
     displayTechniques(filteredData);
