@@ -18,7 +18,7 @@
 					"System"
 			],
 			
-			"sstr_description": "Procdump from sysinternal's could also be used to dump lsass.exe's memory to disk for analysis with tools like Mimikatz.",
+			"sstr_description": "We can use comsvcs.dll with rundll32.exe to dump lsass.exe's memory to disk.",
 			
 			"sstr_detection": "",
 			
