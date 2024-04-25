@@ -4,14 +4,22 @@ let techniquesData = [];
 function filterTechniques() {
     const searchQuery = document.getElementById('search-input').value.toLowerCase();
 
-    const filteredData = techniquesData.filter(item => 
+    const filteredData = techniquesData.filter(item =>
         (item.nano_technique?.toLowerCase().includes(searchQuery) ||
-        item.tactics?.toLowerCase().includes(searchQuery) ||
-        item.techniques?.toLowerCase().includes(searchQuery)) 
+         item.tactics?.toLowerCase().includes(searchQuery) ||
+         item.techniques?.toLowerCase().includes(searchQuery) ||
+         item.sub_technique?.toLowerCase().includes(searchQuery) ||
+         item.nano_platform?.toLowerCase().includes(searchQuery) ||
+         item.privilege_required?.toLowerCase().includes(searchQuery) ||
+         item.nano_description?.toLowerCase().includes(searchQuery) ||
+         item.nano_detection?.toLowerCase().includes(searchQuery) ||
+         item.contributor?.toLowerCase().includes(searchQuery) ||
+         item.entry_date?.includes(searchQuery)) 
     );
 
     displayTechniques(filteredData);
 }
+
 
 
 
