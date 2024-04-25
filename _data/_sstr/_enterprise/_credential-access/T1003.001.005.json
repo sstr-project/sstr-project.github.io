@@ -1,0 +1,31 @@
+{
+            "sstr_id": "T1003.001.005",
+			"sstr_technique": "Using Task Manager to dump LSASS Memory",
+			
+            "tactics_id": "TA0016",
+            "tactics": "Credential Access",
+			
+            "techniques_id": "T1003",
+            "technique": "OS Credential Dumping",
+			
+			"sub_technique_id": "T1003.001",
+            "sub_technique": "LSASS Memory",
+           
+			"sstr_platform": ["Windows"],
+			
+			"privilege_required": "System",
+			
+			"sstr_description": "Windows Task Manager could also be used to dump lsass.exe's memory to disk for analysis with tools like Mimikatz. To create a dump file of lsass.exe on a Windows system, open Task Manager (CTRL-ALT-DEL or right-click the taskbar), locate lsass.exe, right-click it, and choose 'Create Dump File'. The dialog that appears will indicate where the file is saved.",
+			
+			"sstr_detection": "",
+			
+            "reference_links": [
+				"https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1003.001/T1003.001.md",
+				"https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz"
+            ],
+            "contributor": "Ye Yint Min Thu Htut",
+			"entry_date": "2024-04-25",
+            "modified_date": "2024-04-25",
+            "version": "v1.0"
+
+}
